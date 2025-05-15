@@ -1,0 +1,20 @@
+{
+  "jokes": {
+    "joke": [
+      {
+        "category": "Programming",
+        "setup": "Why do programmers prefer dark mode?",
+        "delivery": "Because the light attracts bugs!",
+        "safe": "true",
+        "id": "124"
+      },
+      {
+        "category": "Dad Joke",
+        "setup": "What do you call cheese that isn't yours?",
+        "delivery": "Nacho cheese.",
+        "safe": "true",
+        "id": "202"
+      }
+    ]
+  }
+}
