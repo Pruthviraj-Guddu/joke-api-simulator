@@ -1,0 +1,76 @@
+window.data = {
+    jokes: {
+        joke: [
+            {
+                category: "Programming",
+                setup: "Why do programmers prefer dark mode?",
+                delivery: "Because the light attracts bugs!",
+                safe: "true",
+                id: "124"
+            },
+            {
+                category: "Puns",
+                setup: "Why don’t skeletons fight each other?",
+                delivery: "They don’t have the guts.",
+                safe: "true",
+                id: "201"
+            },
+            {
+                category: "Dad Joke",
+                setup: "What do you call cheese that isn't yours?",
+                delivery: "Nacho cheese.",
+                safe: "true",
+                id: "202"
+            },
+            {
+                category: "Animals",
+                setup: "Why did the scarecrow win an award?",
+                delivery: "Because he was outstanding in his field!",
+                safe: "true",
+                id: "203"
+            },
+            {
+                category: "One-Liner",
+                setup: "I told my wife she was drawing her eyebrows too high.",
+                delivery: "She looked surprised.",
+                safe: "true",
+                id: "204"
+            },
+            {
+                category: "Science",
+                setup: "Why can’t you trust atoms?",
+                delivery: "Because they make up everything!",
+                safe: "true",
+                id: "205"
+            },
+            {
+                category: "School",
+                setup: "Why was the math book sad?",
+                delivery: "Because it had too many problems.",
+                safe: "true",
+                id: "206"
+            },
+            {
+                category: "Work",
+                setup: "Why did the employee get fired from the calendar factory?",
+                delivery: "He took a few days off.",
+                safe: "true",
+                id: "207"
+            },
+            {
+                category: "Food",
+                setup: "Why don’t eggs tell jokes?",
+                delivery: "Because they’d crack each other up.",
+                safe: "true",
+                id: "208"
+            },
+            {
+                category: "Animals",
+                setup: "What do you call a fish wearing a bowtie?",
+                delivery: "Sofishticated.",
+                safe: "true",
+                id: "209"
+            }
+        ]
+    }
+};

@@ -1,24 +1,16 @@
-document.getElementById("fetch-joke-btn").addEventListener("click", fetchJoke);
+let currentJokeIndex = 0;
+const jokes = window.data.jokes.joke;
 
-function fetchJoke() {
-  const url = "https://v2.jokeapi.dev/joke/Any";
-  
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      // Check if the joke is a two-part joke
-      if (data.type === "twopart") {
-        document.getElementById("joke-setup").textContent = data.setup;
-        document.getElementById("joke-delivery").textContent = data.delivery;
-      } else {
-        // Handle single-part jokes if needed
-        document.getElementById("joke-setup").textContent = data.joke;
-        document.getElementById("joke-delivery").textContent = "";
-      }
-    })
-    .catch(error => {
-      console.error("Error fetching joke:", error);
-      document.getElementById("joke-setup").textContent = "Sorry, couldn't fetch a joke. Please try again!";
-      document.getElementById("joke-delivery").textContent = "";
-    });
+// Display the first joke on load
+displayJoke(currentJokeIndex);
+
+document.getElementById("fetch-joke-btn").addEventListener("click", () => {
+  currentJokeIndex = (currentJokeIndex + 1) % jokes.length;
+  displayJoke(currentJokeIndex);
+});
+
+function displayJoke(index) {
+  const joke = jokes[index];
+  document.getElementById("joke-setup").textContent = joke.setup;
+  document.getElementById("joke-delivery").textContent = joke.delivery;
 }
