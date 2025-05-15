@@ -1,5 +1,5 @@
 // Fetch the jokes from the jokes.json file
-fetch('https://pruthviraj-guddu.github.io/joke-api-simulator/api/jokes.json')
+fetch('https://pruthviraj-guddu.github.io/joke-api-simulator/api/jokes/jokes.json')
   .then(response => response.json())
   .then(data => {
     // Show the first joke when the page loads
