@@ -1,9 +1,9 @@
+let jokes = window.data.jokes.joke;
 let currentJokeIndex = 0;
-const jokes = window.data.jokes.joke;
 
-// Display the first joke on load
 displayJoke(currentJokeIndex);
 
+// When the button is clicked, show the next joke
 document.getElementById("fetch-joke-btn").addEventListener("click", () => {
   currentJokeIndex = (currentJokeIndex + 1) % jokes.length;
   displayJoke(currentJokeIndex);
